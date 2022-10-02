@@ -1,0 +1,87 @@
+body{
+    font-family: "Arial";
+    background-color: black;
+    color: white;
+}
+
+.wd-border{
+position: relative;
+border: solid 1px #2f3336;
+left:16px;
+right: 16px;
+width: 600px;
+}
+
+.wd-bookmarks{
+font-size: 20px;
+padding: 5px 0px 0px 12px ;
+}
+.wd-padding-webdev{
+padding: 0px 0px 5px 12px ;
+}
+.wd-handle{
+font-size: 13px;
+color: darkgray;
+}
+/* body css*/
+.wd-image-left{
+width:10%;
+display: inline-block;
+vertical-align : top;
+padding: 12px 0px 0px 16px;
+}
+.wd-right-contents{
+width:80%;
+display: inline-block;
+}
+
+.wd-profile-image{
+height: 48px;
+width: 48px;
+border-radius:40px;
+}
+.wd-profile-handle{
+font-size: 15px;
+color: darkgray;
+}
+
+
+
+.wd-main-contents{
+font-size:15px;
+width: 506px;
+}
+
+.wd-contents-image{
+width:504px;
+height:264px;
+border-radius: 30px;
+}
+
+/* image and brief text*/
+.wd-border-wrap-image-text{
+border:solid 1px #2f3336;
+margin:0px;
+width:504px;
+border-radius:30px;
+}
+
+.wd-padding-title-contents{
+padding:12px
+}
+.wd-padding-body-contents{
+padding-bottom:12px;
+}
+
+.wd-icon-size{
+font-size:20px;
+}
+a{
+text-decoration: none;
+color: darkgray;
+padding-right: 70px;
+}
+.wd-icon-selected{
+color:red;
+}
+
