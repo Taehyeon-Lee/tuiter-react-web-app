@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+  <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="challenge.css" rel="stylesheet"/>
+
+  <!--    Fontawesome-->
+  <!--    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        rel="stylesheet"/>
+</head>
+<body class="bg-black">
+<!-- Challenge part -->
+<!-- put everything in container first-->
+<div class="container pt-2 text-secondary">
+  <div class="row">
+    <!--            lefthand side sidebar-->
+    <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <!-- list tabs  -->
+      <div class="me-1 w-100 ">
+        <div class="list-group w-100 float-end">
+          <a href="#"
+             class="list-group-item list-group-item-action bg-black">
+            <i class="fab fa-twitter" style="color:gray"></i>
+          </a>
+          <a href="#"
+             class="list-group-item list-group-item-action d-flex align-items-center bg-black">
+            <i class="fas fa-home" style="color:gray"></i>
+            <span class="text-muted d-flex d-none d-xl-block ms-1">Home</span>
+          </a>
+          <a href="#Explore"
+             class="list-group-item list-group-item-action d-flex align-items-center bg-black">
+            <i class="fas fa-hashtag" style="color:gray"></i>
+            <span class="text-muted d-flex d-none d-xl-block ms-1">Explore</span>
+          </a>
+          <a href="#notification"
+             class="list-group-item list-group-item-action d-flex align-items-center bg-black">
+            <i class="fas fa-bell" style="color:gray"></i>
+            <span class="text-muted d-flex d-none d-xl-block ms-1">Notifications</span>
+          </a>
+          <a href="#Message"
+             class="list-group-item list-group-item-action d-flex align-items-center bg-black">
+            <i class="fas fa-envelope"style="color:gray"></i>
+            <span class="text-muted d-flex d-none d-xl-block ms-1">Messages</span>
+          </a>
+          <a href="#bookmarks"
+             class="list-group-item list-group-item-action d-flex align-items-center bg-black">
+            <i class="fas fa-bookmark" style="color:gray"></i>
+            <span class="text-muted d-flex d-none d-xl-block ms-1">Bookmarks</span>
+          </a>
+          <a href="#list"
+             class="list-group-item list-group-item-action d-flex align-items-center bg-black">
+            <i class="fas fa-list"style="color:gray"></i>
+            <span class="text-muted d-flex d-none d-xl-block ms-1">Lists</span>
+          </a>
+          <a href="#profile"
+             class="list-group-item list-group-item-action d-flex align-items-center bg-black">
+            <i class="fas fa-user" style="color:gray"></i>
+            <span class="text-muted d-flex d-none d-xl-block ms-1">Profile</span>
+          </a>
+          <a href="#more"
+             class="list-group-item list-group-item-action d-flex align-items-center bg-black">
+            <i class="fas fa-dot-circle" style="color:gray"></i>
+            <span class="text-muted d-flex d-none d-xl-block ms-1">More</span>
+          </a>
+        </div>
+      </div>
+      <!-- button -->
+      <button class="btn btn-primary w-100 mt-1 rounded-pill">
+        Tweet
+      </button>
+
+    </div> <!--End of lefthand side sidebar-->
+
+    <!--            Main contents in the middle-->
+    <div class="col-xxl-6 col-xl-6 col-lg-7 col-md-9 col-sm-9 col-xs-9
+    border-start border-end border-secondary">
+
+      <div> <!--            search bar and navigator-->
+        <!--  search bar-->
+        <div class="row">
+          <div class="col-11">
+            <div class="form">
+              <i class="fa fa-search"></i>
+              <input type="text" class="form-control form-input rounded-pill bg-dark border-dark"
+                     placeholder="Search tuiter"/>
+            </div>
+          </div>
+          <div class="col-1 ">
+            <a href="#"> <i class="fa fa-cog" style="font-size: 1.8em"></i> </a>
+          </div>
+        </div>
+
+        <!-- Navigation tabs-->
+        <ul class="nav nav-tabs mb-2 mt-2 wd-float wd-no-border">
+          <li class="nav-item">
+            <a class="nav-link" href="#">For you</a>
+          </li>
+          <li class="nav-item wd-float">
+            <a class="nav-link" href="#">Trending</a>
+          </li>
+          <li class="nav-item wd-float">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item wd-float">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item active wd-float wd-selected">
+            <a class="nav-link" href="$">Entertainment</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Image in the main content-->
+      <div class="position-relative">
+        <img src="../../images/myuniverse.png" width="100%">
+        <div class="wd-text-on-image-cate">Music * Last night</div>
+        <h3 class="wd-text-on-image-header">
+          BTS and Coldplay release their new song, My Universe
+        </h3>
+        <span class="wd-text-on-image-header"><i class="far fa-planet-ringed"></i></span>
+      </div>
+
+      <!-- post under the image-->
+      <ul class="list-group mb-3">
+        <li class="list-group-item bg-black text-white">
+          <div class="row">
+            <div class="col-11">
+              <div class="text-secondary">
+                Trending in R&B & soul
+              </div>
+              <div class="fw-bolder">
+                R KELLY
+              </div>
+              <div class="text-secondary">
+                18.2k Tweets
+              </div>
+            </div>
+            <div class="col-1">
+              <i class="fas fa-ellipsis-h" style="color:gray"></i>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item bg-black text-white">
+          <div class="row">
+            <div class="col-11">
+              <div class="text-secondary">
+                Trending in R&B & soul
+              </div>
+              <div class="fw-bolder">
+                Chloe
+              </div>
+              <div class="text-secondary">
+                Trending with <a class="text-decoration-none" href="#">Halle</a>
+              </div>
+            </div>
+            <div class="col-1">
+              <i class="fas fa-ellipsis-h" style="color:gray"></i>
+            </div>
+          </div>
+        </li>
+
+        <li class="list-group-item bg-black text-white">
+          <div class="row">
+            <div class="col-10">
+              <div class="fw-bolder">
+                The Times <span class="text-secondary fw-light">* September 24, 2021</span>
+              </div>
+              <div class="fw-bolder">
+                Stanley Tucci: 'Food or sex? That's the cruellest question...'
+              </div>
+              <div class="text-secondary">
+                123k Tweets
+              </div>
+            </div>
+            <div class="col-2">
+              <img class="float-end rounded" src="../../images/stanley-t.jpeg"  width="100%" height="80px"/>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+
+    </div> <!--    End of responsive main contents-->
+
+    <!--            right hand side sidebar-->
+    <div class="col-xxl-4 col-xl-4 col-lg-3 d-lg-block d-xl-block d-xxl-block d-md-none d-sm-none d-xs-none d-xxs-none">
+      <ul class="list-group border-">
+        <div class="list-group-item fw-bolder bg-dark text-white rounded-top">Who to follow</div>
+
+        <!--                Java-->
+        <div class="list-group-item fw-bolder bg-dark text-white">
+          <div class="row">
+            <div class="col-2">
+              <img class="rounded-circle" src="../../images/java-logo.png"
+                   height="50px" width="100%" />
+            </div>
+            <div class="col-6 wd-follow-text">
+              <p class="fw-bolder">The Babylon Bee
+                <span><i class="fal fa-badge-check" style="color:light"></i></span>
+              </p>
+
+              <div class="text-secondary">@Java</div>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary rounded-pill float-end btn-color">Follow</button>
+            </div>
+          </div>
+        </div>
+        <!--                tesla-->
+        <div class="list-group-item fw-bolder bg-dark text-white">
+          <div class="row">
+            <div class="col-2">
+              <img class="rounded-circle" src="../../images/tesla-logo.png"
+                   height="50px" width="100%" />
+            </div>
+            <div class="col-6 wd-follow-text">
+              <div class="fw-bolder">Tesla</div>
+              <div class="text-secondary">@Tesla</div>
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary rounded-pill float-end btn-color">Follow</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Show more-->
+        <div class="list-group-item bg-dark text-white rounded-bottom"><a class="text-decoration-none" href="#">Show more</a></div>
+
+        <li class="list-group-item bg-black pb-0 mb-0">
+          <ul class="list-group list-group-horizontal mt-10 bg-black text-muted wd-rhs-text">
+            <li class="wd-rhs-spacing">
+              Terms of Service
+            </li>
+            <li class="wd-rhs-spacing">
+              Privacy Policy
+            </li>
+            <li>
+              Cookie Policy
+            </li>
+          </ul>
+        </li>
+
+        <li class="list-group-item bg-black pt-0">
+          <ul class="list-group list-group-horizontal mt-10 bg-black text-muted wd-rhs-text wd-no-border">
+            <li class="wd-rhs-spacing">
+              Ads info
+            </li>
+            <li class="wd-rhs-spacing">
+              More <span><i class="fas fa-ellipsis-h" style="color:gray"></i></span>
+            </li>
+            <li>
+              2021 Twitter, Inc.
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+
+
+    </div>
+
+  </div>  <!--     End of row for whole container-->
+
+</div> <!--    End of whole big container-->
+
+
+</body>
+</html>

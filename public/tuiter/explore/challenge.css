@@ -1,0 +1,159 @@
+
+
+.wd-rounded-corners{
+
+border-radius:50px;
+width: 70%;
+height: 30px;
+border-right-width: 12px;
+margin-bottom:12px;
+}
+
+
+.wd-border{
+position: relative;
+border: solid 1px #2f3336;
+left:16px;
+width: 560px;
+height: 95px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  border:0px;
+}
+li.border-control{
+background-color:black;
+border:0px;
+}
+wd-float {
+  float: left;
+}
+
+.wd-selected{
+    color: rgb(29,161,242);
+    border-bottom: 2px solid rgb(29,161,242);
+
+}
+
+.wd-border-contents{
+position: relative;
+border: solid 1px #2f3336;
+left:16px;
+width: 560px;
+padding: 16px;
+}
+
+.wd-bottom-border-posts{
+border-bottom: solid 1px #2f3336;
+height: 120px;
+}
+
+.wd-bottom-border-text-posts{
+border-bottom: solid 1px #2f3336;
+padding: 0px 0px 10px 0px;
+}
+
+.wd-float-left{
+float: left;
+}
+
+.wd-image-border-MA{
+position:relative;
+float: right;
+height: 100px;
+width: 100px;
+border-radius:30px;
+bottom:50px;
+}
+
+.wd-image-border-booster{
+position:relative;
+float: right;
+height: 100px;
+width: 100px;
+border-radius:30px;
+bottom:50px;
+}
+
+.wd-float-done{
+clear: both;
+}
+
+.wd-padding{
+padding: 10px 0px 10px 0px;
+}
+
+
+
+.wd-bottom-space{
+padding: 0px 0px 10px 0px;
+}
+
+.wd-top-space{
+padding: 10px 0px 0px 0px;
+}
+
+.wd-contents-border{
+position: relative;
+border: solid 1px #2f3336;
+left:16px;
+width: 560px;
+}
+
+/* Override button */
+.btn-color {
+background-color:white;
+border: 0px;
+font-weight: bolder;
+color:black;
+}
+
+
+.form{
+position:relative;
+padding-right:rem;
+}
+.form .fa-search{
+ position: absolute;
+ left: 15px;
+ padding-top: 10px;
+ text-align:center;
+}
+.form-input{
+height:40px;
+text-indent:30px;
+}
+
+.wd-follow-text{
+font-size:15px;
+}
+
+.wd-text-on-image-header{
+position: absolute;
+bottom:0;
+left:10px;
+color:white;
+}
+
+.wd-text-on-image-cate{
+position: absolute;
+bottom:73px;
+left:10px;
+color:white;
+}
+
+.wd-rhs-text{
+font-size:14px;
+}
+
+.wd-no-border{
+border:0px;
+}
+
+.wd-rhs-spacing{
+padding-right:10px;
+}
