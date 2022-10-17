@@ -189,5 +189,11 @@ padding: 0px;
 .wd-button-alignment{
 margin: 30px 10x 5px 10px;
 border: 0px;
+}
 
+.wd-text-on-image-header{
+position: absolute;
+bottom:0;
+left:10px;
+color:black;
 }
