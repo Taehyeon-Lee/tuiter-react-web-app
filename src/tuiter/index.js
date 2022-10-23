@@ -14,6 +14,7 @@ function Tuiter() {
             </div>
             <div className="col-10 col-md-10 col-lg-7 col-xl-6"
                 style={{"position":"relative"}}>
+                <h2>Please click explore and home to see tuiter and challange part</h2>
                 <Routes>
                     <Route path="home" element={<HomeComponent/>}/>
                     <Route path="explore" element={<ExploreComponent/>}/>
