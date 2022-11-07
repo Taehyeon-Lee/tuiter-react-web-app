@@ -1,35 +1,41 @@
 import React from "react";
 import HomePostImage from "./home-post-image-item";
 import HomePostNoImage from "./home-post-no-image-item";
+import TuitStats from "./TuitStats";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "../tuits/tuits-reducer";
 
-const HomePostItem = (
-    {
-        post = {
-            "_id": 123,
-            "fullName": "SpaceX",
-            "userName": "@SpaceX",
-            "time": "23h",
-            "post": "Dennis and Akiko Tito are the first two crewmembers on Starship's second commercial spaceflight around the Moon <a href=# class=text-decoration-none>spacex.com/updates</a>",
-            "profileImage": "elon-musk.jpeg",
-            "image": "inspiration4x.jpeg",
-            "imageExist": true,
-            "title": "",
-            "text": "",
-            "comment": "4.2k",
-            "share": "3.5k",
-            "like": "37.5k",
-            "link": "Show this thread"
-        }
+const HomePostItem = ({post}) => {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
     }
 
-) => {
+    return(
+        <li className="list-group-item list-unstyled">
+            <span className="float-left align-top pe-2 pt-2">
+                <img className="rounded-circle wd-profile-image" src={`/images/${post.image}`}/>
+            </span>
+            <span className="wd-right-contents">
+                <p className="pt-2 ps-2">
+                    <b>{post.userName}</b>
+                    <span> <i class="bi bi-patch-check-fill"></i> </span>
+                    <span className="text-muted">{post.handle} * {post.time}</span>
+                    <span className="float-end align-top">
+                        <i className="bi bi-x-lg float-end"
+                            onClick={() => deleteTuitHandler(post._id)}></i>
+                    </span>
+                    <br>
+                    </br>
+                    {post.tuit}
+                </p>
 
-    if(post._id === 123){
-        return (<HomePostImage/>);
-    }
-    else{
-        return (<HomePostNoImage/>);
-    }
+                <div className="wd-padding-title-contents wd-icon-size ">
+                    <TuitStats post={post}/>
+                </div>
+            </span>
+        </li>
+    );
 };
 export default HomePostItem;
 

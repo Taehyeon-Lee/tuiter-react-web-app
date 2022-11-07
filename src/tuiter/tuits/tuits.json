@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
+    "image": "spacex.jpeg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+  {
+    "_id": 345,
+    "topic": "Technology",
+    "userName": "Tesla",
+    "time": "4d",
+    "title": "New model of Tesla vehicle released this year.",
+    "image": "tesla-logo.png",
+    "liked": false,
+    "replies": 234,
+    "retuits": 543,
+    "likes": 3456,
+    "handle": "@tesla",
+    "tuit": "Autopilot is an advanced driver assistance system that enhances safety and convenience behind the wheel. When used properly, Autopilot reduces your overall workload as a driver. Each new Tesla vehicle is equipped with eight external cameras and powerful vision processing to provide an additional layer of safety. All vehicles built for the North American market now use our camera-based Tesla Vision to deliver Autopilot features, rather than radar."
+  },
+  {
+    "_id": 456,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on it's 6'bed",
+    "image": "spacex.jpeg",
+    "liked": true,
+    "replies": 345,
+    "retuits": 321,
+    "likes": 1234,
+    "handle": "@spacex",
+    "tuit": "SpaceX had three catastrophic failures in a row. But after the 4th run was successful, NASA decided to take a risk on Musk and awarded his company a billion-dollar contract.\n\nHis unique rocket is capable of taking off and landing back down with pinpoint accuracy, to be re-used again. It sounds crazy for an independent company to one-up the Space Shuttle, but after proving itself in the field, the rocket captured the imagination of millions"
+  }
+]

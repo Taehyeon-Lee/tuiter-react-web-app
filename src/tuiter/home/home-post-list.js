@@ -1,8 +1,10 @@
 import React from "react";
-import postsArray from './posts.json';
 import HomePostItem from './home-post-item';
+import {useSelector} from "react-redux";
 
 const HomePostList = () => {
+    const postsArray = useSelector((state) => state.tuits);
+
     return(
         <ul className="list-group">
             {
