@@ -2,19 +2,21 @@ import {useSelector, useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 import React from "react";
 import {useState} from "react";
+import {editName} from "./edit-profile-reducer"
 
 const EditProfileComponent = () =>{
     const userProfile = useSelector((state) => state.profile);
+    const [name, setNewName] = useState(userProfile.fullName);
+    const [bio, setNewBio] = useState(userProfile.bio);
+    const [location, setNewLocation] = useState(userProfile.location);
+    const [website, setNewWebsite] = useState(userProfile.website);
+    const [profile, setProfile] = useState(userProfile);
     const dispatch = useDispatch();
 
-    const [profile, setProfile] = useState(userProfile);
-
-    const nameChangeHandler = (event) => {
-        const newName = event.target.value;
-        const newFirstName = newName.split(" ")[0];
-        const newLastName = newName.split(" ")[1];
-        userProfile={...userProfile, "fullName": newName, "firstName":newFirstName, "lastName": newLastName};
+    const saveProfile = () => {
         setProfile(userProfile);
+        dispatch(editName(userProfile));
+        console.log({userProfile});
     }
 
 
@@ -30,9 +32,12 @@ const EditProfileComponent = () =>{
                 </label>
             </div>
             <div className="col-3">
-                <button className="btn btn-dark rounded-pill float-end">
-                    <b>Save</b>
-                </button>
+
+                    <button onClick={saveProfile}
+                     className="btn btn-dark rounded-pill float-end">
+                        <b>Save</b>
+                    </button>
+
             </div>
 
              <div className="mt-2 mb-2">
@@ -50,27 +55,33 @@ const EditProfileComponent = () =>{
                     <span className="mt-1 mb-1 text-muted">Name</span>
                     <br/>
                     <textarea className="mt-1 wd-textbox-edit-profile"
-                     onChange={nameChangeHandler} rows="1" value={userProfile.fullName}/>
+                     onChange={(e) => setNewName(e.target.value)}
+                     rows="1" value={name}/>
                 </div>
 
                 <div className="border border-muted rounded ps-2 pe-2 mb-3 wd-bio-edit-profile">
                     <span className="mt-1 mb-1 text-muted">Bio</span>
                     <br/>
-                    <textarea className="mt-1 wd-textbox-edit-profile" rows="1" value={userProfile.bio}/>
+                    <textarea className="mt-1 wd-textbox-edit-profile"
+                     onChange={(e) => setNewBio(e.target.value)}
+                     rows="1" value={bio}/>
                 </div>
 
                 <div className="border border-muted rounded ps-2 pe-2 mb-3">
                     <span className="mt-1 mb-1 text-muted">Location</span>
                     <br/>
-                    <textarea className="mt-1 wd-textbox-edit-profile" rows="1" value={userProfile.location}/>
+                    <textarea className="mt-1 wd-textbox-edit-profile"
+                     onChange={(e) => setNewLocation(e.target.value)}
+                     rows="1" value={location}/>
                 </div>
 
                 <div className="border border-muted rounded ps-2 pe-2 mb-3">
                     <span className="mt-1 mb-1 text-muted">Website</span>
                     <br/>
-                    <textarea className="mt-1 wd-textbox-edit-profile" rows="1"
-                    placeholder="Website"
-                    value={userProfile.website}/>
+                    <textarea className="mt-1 wd-textbox-edit-profile"
+                     onChange={(e) => setNewWebsite(e.target.value)}
+                     rows="1" placeholder="Website"
+                     value={website}/>
                 </div>
 
                 <div className="border border-muted rounded ps-2 pe-2 mb-3">
