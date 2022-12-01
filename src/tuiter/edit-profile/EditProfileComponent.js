@@ -16,9 +16,6 @@ const EditProfileComponent = () =>{
 
     const saveProfile = () => {
         console.log("Save button initiation");
-        const splitName = fullName.split(" ");
-        {setNewFirstName(splitName[0]);}
-        {setNewLastName(splitName[1]);}
         console.log(firstName);
         console.log(lastName);
         const temp = {...userProfile, fullName, bio, location, website, firstName, lastName}
@@ -63,7 +60,10 @@ const EditProfileComponent = () =>{
                     <span className="mt-1 mb-1 text-muted">Name</span>
                     <br/>
                     <textarea className="mt-1 wd-textbox-edit-profile"
-                     onChange={(e) => {setNewName(e.target.value);}}
+                     onChange={(e) => {setNewName(e.target.value);
+                                        setNewFirstName(e.target.value.split(" ")[0]);
+                                        setNewLastName(e.target.value.split(" ")[1]);
+                     }}
                      rows="1" value={fullName}/>
                 </div>
 
