@@ -2,21 +2,28 @@ import {useSelector, useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 import React from "react";
 import {useState} from "react";
-import {editName} from "./edit-profile-reducer"
+import {editProfile} from "../profile/profile-reducer"
 
 const EditProfileComponent = () =>{
     const userProfile = useSelector((state) => state.profile);
-    const [name, setNewName] = useState(userProfile.fullName);
+    const [fullName, setNewName] = useState(userProfile.fullName);
+    const [firstName, setNewFirstName] = useState(userProfile.firstName);
+    const [lastName, setNewLastName] = useState(userProfile.lastName);
     const [bio, setNewBio] = useState(userProfile.bio);
     const [location, setNewLocation] = useState(userProfile.location);
     const [website, setNewWebsite] = useState(userProfile.website);
-    const [profile, setProfile] = useState(userProfile);
     const dispatch = useDispatch();
 
     const saveProfile = () => {
-        setProfile(userProfile);
-        dispatch(editName(userProfile));
-        console.log({userProfile});
+        console.log("Save button initiation");
+        const splitName = fullName.split(" ");
+        {setNewFirstName(splitName[0]);}
+        {setNewLastName(splitName[1]);}
+        console.log(firstName);
+        console.log(lastName);
+        const temp = {...userProfile, fullName, bio, location, website, firstName, lastName}
+        dispatch(editProfile(temp));
+        console.log({temp});
     }
 
 
@@ -32,11 +39,12 @@ const EditProfileComponent = () =>{
                 </label>
             </div>
             <div className="col-3">
-
+                <Link to="/tuiter/profile">
                     <button onClick={saveProfile}
                      className="btn btn-dark rounded-pill float-end">
                         <b>Save</b>
                     </button>
+                </Link>
 
             </div>
 
@@ -55,8 +63,8 @@ const EditProfileComponent = () =>{
                     <span className="mt-1 mb-1 text-muted">Name</span>
                     <br/>
                     <textarea className="mt-1 wd-textbox-edit-profile"
-                     onChange={(e) => setNewName(e.target.value)}
-                     rows="1" value={name}/>
+                     onChange={(e) => {setNewName(e.target.value);}}
+                     rows="1" value={fullName}/>
                 </div>
 
                 <div className="border border-muted rounded ps-2 pe-2 mb-3 wd-bio-edit-profile">
