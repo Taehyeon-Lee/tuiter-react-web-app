@@ -13,6 +13,7 @@ const editProfileSlice = createSlice({
             state.firstName = splitName[0];
             state.lastName = splitName[1];
 
+
         },
     }
 });

@@ -8,7 +8,14 @@ const profileSlice = createSlice({
         editProfile(state, action) {
             console.log("Inside the profile reducer");
             console.log(action.payload);
-            state.push(action.payload)
+            const p = action.payload
+            state.firstName = p.firstName;
+            state.lastName = p.lastName;
+            state.bio = p.bio;
+            state.location = p.location;
+            state.website = p.website;
+            state.dateOfBirth = p.dateOfBirth;
+            return state;
         },
     }
 });
